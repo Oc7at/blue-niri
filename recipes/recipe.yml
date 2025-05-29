@@ -25,6 +25,7 @@ modules:
     install:
       - helix
       - niri
+      - alacritty
       - fuzzel
       - waybar
       - swayidle
