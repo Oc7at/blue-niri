@@ -45,6 +45,9 @@ modules:
       - playerctl
       - qt5-qtwayland
       - qt6-qtwayland
+    remove:
+      - firefox
+      - firefox-langpacks
   - type: systemd
     system:
       enabled:
