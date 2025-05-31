@@ -28,6 +28,7 @@ modules:
       - nautilus
       - gnome-keyring
       - mako
+      - fuzzel
       - foot
       - fuzzel
       - waybar
