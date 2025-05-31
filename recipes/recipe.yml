@@ -25,6 +25,11 @@ modules:
     install:
       - helix
       - niri
+      - xdg-desktop-portal-gnome
+      - xdg-desktop-portal-gtk
+      - nautilus
+      - gnome-keyring
+      - mako
       - foot
       - fuzzel
       - waybar
