@@ -6,8 +6,8 @@ name: blue-niri
 description: I like Niri. This only exists until wayblue makes their own.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: quay.io/fedora-ostree-desktops/base-atomic
-image-version: 42 # latest is also supported if you want new updates ASAP
+base-image: quay.io/fedora-testing/fedora-bootc
+image-version: 42-minimal-plus # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -21,7 +21,6 @@ modules:
     repos:
       - https://copr.fedorainfracloud.org/coprs/ulysg/xwayland-satellite/repo/fedora-%OS_VERSION%/ulysg-xwayland-satellite-fedora-%OS_VERSION%.repo
     install:
-      - helix
       - niri
       - xdg-desktop-portal-gnome
       - xdg-desktop-portal-gtk
@@ -29,8 +28,7 @@ modules:
       - gnome-keyring
       - mako
       - fuzzel
-      - foot
-      - fuzzel
+      - alacritty
       - waybar
       - swayidle
       - swaylock
@@ -45,9 +43,6 @@ modules:
       - playerctl
       - qt5-qtwayland
       - qt6-qtwayland
-    remove:
-      - firefox
-      - firefox-langpacks
   - type: systemd
     system:
       enabled:
@@ -67,4 +62,3 @@ modules:
     user: {} # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
-
