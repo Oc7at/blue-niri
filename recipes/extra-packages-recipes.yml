@@ -1,0 +1,28 @@
+---
+
+modules:
+  - type: rpm-ostree
+    install:
+      - dnsconfd
+      - sddm
+      - wireplumber
+      - playerctl
+    remove:
+      - firefox
+      - firefox-langpacks
+
+  - type: systemd
+    system:
+      enabled:
+        - sddm
+        - dnsconfd
+      disabled:
+        - systemd-resolved
+
+  - type: default-flatpaks
+    notify: true
+    system:
+      install:
+        - io.gitlab.librewolf-community
+      remove:
+        - org.gnome.eog

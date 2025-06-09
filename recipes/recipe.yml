@@ -17,51 +17,7 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/ulysg/xwayland-satellite/repo/fedora-%OS_VERSION%/ulysg-xwayland-satellite-fedora-%OS_VERSION%.repo
-    install:
-      - niri
-      - xdg-desktop-portal-gnome
-      - xdg-desktop-portal-gtk
-      - nautilus
-      - gnome-keyring
-      - mako
-      - fuzzel
-      - alacritty
-      - waybar
-      - swayidle
-      - swaylock
-      - swayimg
-      - xwayland-satellite
-      - dnsconfd
-      - sddm
-      - wireplumber
-      - xdg-user-dirs
-      - dbus-tools
-      - dbus-daemon
-      - playerctl
-      - qt5-qtwayland
-      - qt6-qtwayland
-    remove:
-      - firefox
-      - firefox-langpacks
-  - type: systemd
-    system:
-      enabled:
-        - sddm
-        - dnsconfd
-      disabled:
-        - systemd-resolved
-
-  - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      # If no repo information is specified, Flathub will be used by default
-      install:
-        - io.gitlab.librewolf-community
-      remove:
-        - org.gnome.eog
-    user: {} # Also add Flathub user repo, but no user packages
-
+  - from-file: niri-modules.yml
+  - from-file: extra-packages-recipes.yml
+  
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
