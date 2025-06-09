@@ -1,0 +1,17 @@
+---
+
+modules:
+  - type: rpm-ostree
+    repos:
+      - https://copr.fedorainfracloud.org/coprs/ublue-os/packages/repo/fedora-%OS_VERSION%/ublue-os-packages-fedora-%OS_VERSION%.repo
+    install:
+      - ublue-brew
+      - ublue-fastfetch
+      - ublue-os-just
+      - ublue-os-libvirt-workarounds
+      - ublue-os-luks
+      - ublue-os-media-automount-udev
+      - ublue-os-udev-rules
+      - ublue-os-update-services
+      - ublue-polkit-rules
+      - uupd
