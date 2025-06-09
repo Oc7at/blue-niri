@@ -19,5 +19,6 @@ modules:
 
   - from-file: niri-modules.yml
   - from-file: extra-packages-recipes.yml
+  - from-file: blue-modules.yml
   
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
