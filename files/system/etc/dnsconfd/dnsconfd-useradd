@@ -1,0 +1,4 @@
+#!/usr/bin/sh
+
+getent group dnsconfd > /dev/null || groupadd -r dnsconfd
+getent passwd dnsconfd > /dev/null || useradd -r -g dnsconfd -c "Dnsconfd local DNS cache configurator" -d / -s /usr/sbin/nologin dnsconfd
