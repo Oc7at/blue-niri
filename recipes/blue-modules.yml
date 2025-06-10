@@ -12,5 +12,6 @@ modules:
       - ublue-os-media-automount-udev
       - ublue-os-udev-rules
       - ublue-os-update-services
+      - ublue-recipes
       - ublue-polkit-rules
       - uupd
