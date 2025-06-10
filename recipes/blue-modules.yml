@@ -6,6 +6,8 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/ublue-os/packages/repo/fedora-%OS_VERSION%/ublue-os-packages-fedora-%OS_VERSION%.repo
     install:
       - ublue-os-just
+      # I know, this isn't Blue! But zstd should be a dependency of ublue-brew
+      - zstd
       - ublue-brew
       - ublue-os-libvirt-workarounds
       - ublue-os-luks
