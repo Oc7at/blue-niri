@@ -18,6 +18,7 @@ modules:
       enabled:
         - sddm-boot
         - sddm
+        - dnsconfd-boot
         - dnsconfd
       disabled:
         - systemd-resolved
