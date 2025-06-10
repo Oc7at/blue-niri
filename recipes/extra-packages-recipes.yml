@@ -2,9 +2,13 @@
 
 modules:
   - type: rpm-ostree
+    remove:
+      - sddm
+  - type: rpm-ostree
     install:
       - dnsconfd
       - sddm
+      - sddm-themes
       - wireplumber
       - playerctl
       - pavucontrol
