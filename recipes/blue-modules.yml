@@ -5,7 +5,6 @@ modules:
     repos:
       - https://copr.fedorainfracloud.org/coprs/ublue-os/packages/repo/fedora-%OS_VERSION%/ublue-os-packages-fedora-%OS_VERSION%.repo
     install:
-      - ublue-brew
       - ublue-os-just
       - ublue-os-libvirt-workarounds
       - ublue-os-luks
