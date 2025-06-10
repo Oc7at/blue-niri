@@ -6,6 +6,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/ublue-os/packages/repo/fedora-%OS_VERSION%/ublue-os-packages-fedora-%OS_VERSION%.repo
     install:
       - ublue-os-just
+      - ublue-brew
       - ublue-os-libvirt-workarounds
       - ublue-os-luks
       - ublue-os-media-automount-udev
