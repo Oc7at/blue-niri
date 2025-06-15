@@ -4,6 +4,8 @@ modules:
   - type: rpm-ostree
     repos:
       - https://negativo17.org/repos/fedora-multimedia.repo
+    remove:
+      - ffmpeg-free
     install:
       - ffmpeg
       - mpv
