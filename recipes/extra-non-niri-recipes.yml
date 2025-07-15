@@ -4,3 +4,5 @@ modules:
   - type: rpm-ostree
     install:
       - foot
+      - libatomic
+      - mpv-devel
