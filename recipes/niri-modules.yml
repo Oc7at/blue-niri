@@ -17,6 +17,7 @@ modules:
       - swayidle
       - swaylock
       - swayimg
+      - swaybg
       - xwayland-satellite
       - xdg-user-dirs
       - qt5-qtwayland
