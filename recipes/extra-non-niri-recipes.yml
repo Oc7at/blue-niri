@@ -6,3 +6,4 @@ modules:
       - foot
       - mpv-devel
       - libinput-utils
+      - solaar
