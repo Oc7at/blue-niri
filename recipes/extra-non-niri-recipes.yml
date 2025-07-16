@@ -5,5 +5,6 @@ modules:
     install:
       - foot
       - mpv-devel
+      - libatomic
       - libinput-utils
       - solaar
