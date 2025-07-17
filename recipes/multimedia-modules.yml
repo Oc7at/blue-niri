@@ -1,11 +1,13 @@
 ---
 
 modules:
-  - type: rpm-ostree
+  - type: dnf
     repos:
-      - https://negativo17.org/repos/fedora-multimedia.repo
-    remove:
-      - ffmpeg-free
+      cleanup: true
+      nonfree: negativo17
+    replace:
+      - from-repo: negativo17
+        packages:
+          - ffmpeg
     install:
-      - ffmpeg
       - mpv
