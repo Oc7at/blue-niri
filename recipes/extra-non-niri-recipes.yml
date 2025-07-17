@@ -3,9 +3,10 @@
 modules:
   - type: dnf
     install:
-      - foot
-      - mpv-devel
-      - libatomic
-      - libinput-utils
-      - solaar
-      - vim
+      packages:
+        - foot
+        - mpv-devel
+        - libatomic
+        - libinput-utils
+        - solaar
+        - vim

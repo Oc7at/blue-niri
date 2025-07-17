@@ -7,15 +7,16 @@ modules:
       copr:
       - ublue-os/packages
     install:
-      - ublue-os-just
-      # I know, this isn't Blue! But zstd should be a dependency of ublue-brew
-      - zstd
-      - ublue-brew
-      - ublue-os-libvirt-workarounds
-      - ublue-os-luks
-      - ublue-os-media-automount-udev
-      - ublue-os-udev-rules
-      - ublue-os-update-services
-      - ublue-recipes
-      - ublue-polkit-rules
-      - uupd
+      packages:
+        - ublue-os-just
+        # I know, this isn't Blue! But zstd should be a dependency of ublue-brew
+        - zstd
+        - ublue-brew
+        - ublue-os-libvirt-workarounds
+        - ublue-os-luks
+        - ublue-os-media-automount-udev
+        - ublue-os-udev-rules
+        - ublue-os-update-services
+        - ublue-recipes
+        - ublue-polkit-rules
+        - uupd

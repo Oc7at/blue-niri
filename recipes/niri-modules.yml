@@ -7,22 +7,23 @@ modules:
       copr:
         - ulysg/xwayland-satellite
     install:
-      - niri
-      - xdg-desktop-portal-gnome
-      - xdg-desktop-portal-gtk
-      - nautilus
-      - gnome-keyring
-      - mako
-      - fuzzel
-      - alacritty
-      - waybar
-      - swayidle
-      - swaylock
-      - swayimg
-      - swaybg
-      - xwayland-satellite
-      - xdg-user-dirs
-      - qt5-qtwayland
-      - qt6-qtwayland
-      - dbus-tools
-      - dbus-daemon
+      packages:
+        - niri
+        - xdg-desktop-portal-gnome
+        - xdg-desktop-portal-gtk
+        - nautilus
+        - gnome-keyring
+        - mako
+        - fuzzel
+        - alacritty
+        - waybar
+        - swayidle
+        - swaylock
+        - swayimg
+        - swaybg
+        - xwayland-satellite
+        - xdg-user-dirs
+        - qt5-qtwayland
+        - qt6-qtwayland
+        - dbus-tools
+        - dbus-daemon
