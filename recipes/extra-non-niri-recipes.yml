@@ -9,5 +9,3 @@ modules:
       - libinput-utils
       - solaar
       - vim
-      # Pinning as the latest disable my quirks
-      - libinput-1.28.1
