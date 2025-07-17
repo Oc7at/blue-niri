@@ -3,15 +3,17 @@
 modules:
   - type: dnf
     install:
-      - dnsconfd
-      - sddm
-      - sddm-themes
-      - wireplumber
-      - playerctl
-      - pavucontrol
+      packages:
+        - dnsconfd
+        - sddm
+        - sddm-themes
+        - wireplumber
+        - playerctl
+        - pavucontrol
     remove:
-      - firefox
-      - firefox-langpacks
+      packages:
+        - firefox
+        - firefox-langpacks
 
   - type: systemd
     system:
