@@ -6,7 +6,7 @@ modules:
       cleanup: true
       nonfree: negativo17
     replace:
-      - from-repo: negativo17
+      - from-repo: fedora-multimedia
         packages:
           - ffmpeg
     install:
