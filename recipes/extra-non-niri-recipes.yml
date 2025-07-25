@@ -10,6 +10,7 @@ modules:
         - libinput-utils
         - solaar
         - vim
+        - clang
 
   - type: dnf
     install:
