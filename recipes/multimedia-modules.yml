@@ -9,7 +9,6 @@ modules:
       - from-repo: fedora-multimedia
         packages:
           - ffmpeg
-          - libavcodec
     install:
       packages:
         - mpv
