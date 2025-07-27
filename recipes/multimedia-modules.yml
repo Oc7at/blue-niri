@@ -9,11 +9,10 @@ modules:
       - from-repo: fedora-multimedia
         packages:
           - ffmpeg
+          - libavcodec
     install:
       packages:
         - mpv
         - steam
-        - ffmpeg-libs
         - gstreamer1-plugin-openh264
         - mozilla-openh264
-        - libavcodec
