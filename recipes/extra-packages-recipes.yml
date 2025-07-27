@@ -26,8 +26,9 @@ modules:
         - systemd-resolved
 
   - type: default-flatpaks
-    notify: true
-    system:
+    configurations:
+    - notify: true
+      scope: system
       install:
         - io.gitlab.librewolf-community
       remove:
