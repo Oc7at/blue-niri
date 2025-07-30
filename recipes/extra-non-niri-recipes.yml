@@ -6,8 +6,6 @@ modules:
       packages:
         - foot
         - mpv-devel
-        - libatomic
-        - libinput-utils
         - solaar
         - vim
         - clang
