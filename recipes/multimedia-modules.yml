@@ -15,3 +15,4 @@ modules:
         - steam
         - gstreamer1-plugin-openh264
         - mozilla-openh264
+        - libavcodec
