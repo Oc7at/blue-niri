@@ -5,7 +5,6 @@ modules:
     install:
       packages:
         - foot
-        - mpv-devel
         - solaar
         - vim
         - clang

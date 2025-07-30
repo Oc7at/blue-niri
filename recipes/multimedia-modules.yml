@@ -12,6 +12,7 @@ modules:
     install:
       packages:
         - mpv
+        - mpv-devel
         - steam
         - libavcodec
         - libatomic
