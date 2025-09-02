@@ -8,6 +8,7 @@ modules:
         - solaar
         - vim
         - clang
+        - wireguard-tools
 
   - type: dnf
     install:
