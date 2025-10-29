@@ -9,6 +9,7 @@ modules:
         - vim
         - clang
         - wireguard-tools
+        - tailscale
 
   - type: dnf
     install:
