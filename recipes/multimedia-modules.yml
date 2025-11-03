@@ -7,9 +7,11 @@ modules:
       nonfree: negativo17
     replace:
       - from-repo: fedora-multimedia
+        allow-erasing: true
         packages:
           - ffmpeg
     install:
+      allow-erasing: true
       packages:
         - mpv
         - mpv-devel
