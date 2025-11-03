@@ -12,9 +12,6 @@ image-version: 43 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - type: script
-    snippets:
-      - "mkdir -p /usr/share/X11/xkb/symbols/"
   - type: files
     files:
       - source: system
