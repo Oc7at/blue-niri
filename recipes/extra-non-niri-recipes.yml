@@ -8,7 +8,6 @@ modules:
         - solaar
         - vim
         - clang
-        - pipewire-alsa
         - wireguard-tools
         - tailscale
 
