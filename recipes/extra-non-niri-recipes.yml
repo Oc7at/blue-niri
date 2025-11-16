@@ -10,9 +10,3 @@ modules:
         - clang
         - wireguard-tools
         - tailscale
-
-  - type: dnf
-    install:
-      allow-erasing: true
-      packages:
-        - libinput-1.28.1
