@@ -11,8 +11,8 @@ modules:
           - ffmpeg
     install:
       packages:
-        - mpv@0.40.0
-        - mpv-devel@0.40.0
+        - mpv-0.40.0-3.fc43
+        - mpv-devel-0.40.0-3.fc43
         - steam
         - libavcodec
         - libatomic
