@@ -5,7 +5,6 @@ modules:
     repos:
       cleanup: false
       copr:
-        - ulysg/xwayland-satellite
         - yalter/niri
     install:
       packages:
