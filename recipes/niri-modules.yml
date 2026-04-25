@@ -24,6 +24,7 @@ modules:
         - swaybg
         - xwayland-satellite
         - xdg-user-dirs
+        - mate-polkit
         - qt5-qtwayland
         - qt6-qtwayland
         - dbus-tools
