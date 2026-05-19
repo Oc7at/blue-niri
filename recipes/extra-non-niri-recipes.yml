@@ -11,4 +11,4 @@ modules:
         - network-manager-applet
         - wireguard-tools
         - tailscale
-        - waydroid
+        - hidapi
