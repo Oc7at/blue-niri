@@ -9,7 +9,7 @@ Before=dnsconfd.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/local/bin/dnsconfd-useradd
+ExecStart=/usr/bin/dnsconfd-useradd
 RemainAfterExit=yes
 
 [Install]
